@@ -10,8 +10,11 @@
   body{ background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; line-height:1.7; padding:32px 16px 64px; }
   .wrap{ max-width:760px; margin:0 auto; }
   header{ background:linear-gradient(140deg,#FFD988,#FFBF52 55%,#F5AC31); border-radius:16px; padding:28px 26px; margin-bottom:8px; box-shadow:0 4px 14px rgba(245,172,49,.25); }
-  header h1{ font-size:22px; font-weight:700; color:#352717; }
+  .head-top{ display:flex; justify-content:space-between; align-items:flex-start; gap:12px; }
+  header h1{ font-size:22px; font-weight:700; color:#352717; margin:0; }
   header .tag{ margin-top:8px; font-size:13px; color:#5C4B2B; }
+  .lang{ flex-shrink:0; align-self:flex-start; background:rgba(53,39,23,.10); color:#593F18; padding:6px 14px; border-radius:999px; font-size:13px; text-decoration:none; font-weight:600; }
+  .lang:hover{ background:rgba(53,39,23,.18); text-decoration:none; }
   .date{ display:inline-block; margin-top:14px; background:rgba(53,39,23,.10); color:#593F18; padding:4px 12px; border-radius:999px; font-size:12px; }
   .card{ background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px 22px; margin-top:16px; box-shadow:0 2px 8px rgba(245,172,49,.06); }
   .card h2{ font-size:16px; color:var(--accent); margin-bottom:10px; border-left:4px solid var(--accent-bright); padding-left:10px; }
@@ -29,8 +32,13 @@
 <div class="wrap">
 
   <header>
-    <h1>Phocal 隐私保护声明 · 摘要</h1>
-    <div class="tag">Photos 桌面小组件工具 · 本地优先</div>
+    <div class="head-top">
+      <div>
+        <h1>Phocal 隐私保护声明 · 摘要</h1>
+        <div class="tag">Photos 桌面小组件工具 · 本地优先</div>
+      </div>
+      <a class="lang" href="en.html">English</a>
+    </div>
     <div class="date">更新日期：2026 年 9 月 1 日</div>
   </header>
 
